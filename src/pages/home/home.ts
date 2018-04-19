@@ -9,8 +9,18 @@ import { BarcodeScanner, BarcodeScannerOptions, BarcodeScanResult } from '@ionic
 export class HomePage {
 
   result: BarcodeScanResult;
+  dataToEncode: string;
 
   constructor(private barcode: BarcodeScanner, public navCtrl: NavController) {}
+
+  async encodeData(){
+    try{
+      await this.barcode.encode(this.barcode.Encode.TEXT_TYPE, this.dataToEncode);
+    } catch (error) {
+      console.error(error);
+    }
+  } 
+
 
   async scanBarcode(){
     try{

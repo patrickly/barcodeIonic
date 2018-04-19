@@ -15,6 +15,21 @@
     </ion-card-content>
   </ion-card>
 
+  <ion-card >
+      <ion-card-content>
+          <ion-item>
+            <ion-label floating>Data to Encode</ion-label>
+            <ion-input [(ngModel)]="dataToEncode"></ion-input>
+          </ion-item>
+
+          <ion-row>
+            <button ion-button clear (click)= "encodeData()">Encode</button>
+          </ion-row>
+
+      </ion-card-content>
+    </ion-card>
+
+
 <ion-fab bottom right> 
   <button ion-fab (click)= "scanBarcode()">
     <ion-icon name="barcode"></ion-icon>

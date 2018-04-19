@@ -1,37 +1,30 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="secondary">
     <ion-title>
-      Ionic Blank
+      Zero Waste Database
     </ion-title>
+
+
+
   </ion-navbar>
 </ion-header>
 
+
+
 <ion-content padding>
-  <ion-card *ngIf="result">
-    <ion-card-content>
-      <p>Text: {{result.text}}</p>
-      <p>Format: {{result.format}}</p>
-      <p>Cancelled: {{result.cancelled}} </p>
-    </ion-card-content>
-  </ion-card>
 
-  <ion-card >
-      <ion-card-content>
-          <ion-item>
-            <ion-label floating>Data to Encode</ion-label>
-            <ion-input [(ngModel)]="dataToEncode"></ion-input>
-          </ion-item>
 
-          <ion-row>
-            <button ion-button clear (click)= "encodeData()">Encode</button>
-          </ion-row>
+    <ion-content>
+        <ion-list>
+          <ion-item *ngFor="let item of items" (click)="viewItem(item)">{{item.title}}</ion-item>
+        </ion-list>
+      </ion-content>
 
-      </ion-card-content>
-    </ion-card>
+
 
 
 <ion-fab bottom right> 
-  <button ion-fab (click)= "scanBarcode()">
+  <button ion-fab (click)= "scanBarcodez()">
     <ion-icon name="barcode"></ion-icon>
   </button>
 </ion-fab>

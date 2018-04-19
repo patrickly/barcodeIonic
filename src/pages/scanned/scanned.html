@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        Scan an Item
+      </ion-title>
+  
+  
+  
+    </ion-navbar>
+  </ion-header>
+  
+  
+  
+  <ion-content padding>
+  
+  
+    <ion-card *ngIf="result">
+      <ion-card-content>
+        <p>Text: {{result.text}}</p>
+        <p>Format: {{result.format}}</p>
+        <p>Cancelled: {{result.cancelled}} </p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngIf="resultTwo">
+        <ion-card-content>
+          <p>Text: {{resultTwo}}</p>
+  
+        </ion-card-content>
+      </ion-card>
+
+  <ion-fab bottom right> 
+    <button ion-fab (click)= "scanBarcode()">
+      <ion-icon name="barcode"></ion-icon>
+    </button>
+  </ion-fab>
+  
+  
+  </ion-content>
+  

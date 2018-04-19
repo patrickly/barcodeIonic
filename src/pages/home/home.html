@@ -7,8 +7,19 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-card *ngIf="result">
+    <ion-card-content>
+      <p>Text: {{result.text}}</p>
+      <p>Format: {{result.format}}</p>
+      <p>Cancelled: {{result.cancelled}} </p>
+    </ion-card-content>
+  </ion-card>
+
+<ion-fab bottom right> 
+  <button ion-fab (click)= "scanBarcode()">
+    <ion-icon name="barcode"></ion-icon>
+  </button>
+</ion-fab>
+
+
 </ion-content>

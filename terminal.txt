@@ -579,3 +579,27 @@ LAUNCH SUCCESS
 [02:20:30]  template update started ...
 [02:20:30]  template update finished in 6 ms
 [02:20:30]  build finished in 12 ms
+
+
+
+----
+
+  229  lsls
+  230  ls
+  231  pwd
+  232  git init
+  233  git status
+  234  ionic start BarcodeScanner blank
+  235  ls
+  236  cd BarcodeScanner/
+  237  ls
+  238  npm install
+  239  ls
+  240  ionic start
+  241  ionic serve
+  242  ls -la
+  243  ionic cordova plugin add phonegap-plugin-barcodescanner
+  244  git status
+  245  npm install --save @ionic-native/barcode-scanner
+  246  ionic cordova run android -l
+  247  history

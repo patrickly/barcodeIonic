@@ -13,6 +13,13 @@
   
   <ion-content padding>
   
+
+      <ion-card *ngIf="!result">
+          <ion-card-content>
+  <p>Please scan an item</p>
+          </ion-card-content>
+        </ion-card>
+
   
     <ion-card *ngIf="result">
       <ion-card-content>

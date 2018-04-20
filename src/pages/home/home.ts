@@ -31,9 +31,9 @@ export class HomePage {
 ionViewDidLoad(){
 
   this.items = [
-    {title: 'Plastic Bottle', description: 'Recycle'},
-    {title: 'hi2', description: 'test2'},
-    {title: 'hi3', description: 'test3'}
+    {title: 'Plastic Bottle', description: 'Recycle Bin', img: 'assets/imgs/bottle.png'},
+    {title: 'Pizza Box', description: 'Compost Bin', img: 'assets/imgs/pizzabox.png'},
+    {title: 'Ziplock', description: 'Landfill Bin', img: 'assets/imgs/ziplock.png'}
   ];
   
 }

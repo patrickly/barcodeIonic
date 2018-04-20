@@ -22,9 +22,9 @@ export class ScannedPage {
     console.log('ionViewDidLoad ScannedPage');
 
     this.items = [
-      {title: 'Plastic Bottle', description: 'Recycle'},
-      {title: 'hi2', description: 'test2'},
-      {title: 'hi3', description: 'test3'}
+      {title: 'Plastic Bottle', description: 'Recycle Bin', img: 'assets/imgs/bottle.png'},
+      {title: 'Pizza Box', description: 'Compost Bin', img: 'assets/imgs/pizzabox.png'},
+      {title: 'Ziplock', description: 'Landfill Bin', img: 'assets/imgs/ziplock.png'}
     ];
   }
 
@@ -39,7 +39,7 @@ export class ScannedPage {
 
         this.result = await this.barcode.scan(options);
             if(this.result.text = '096619756803'){
-            this.resultTwo = '096619756803';
+            this.resultTwo = '096619756803'; // Kirkland waterbottle
             let itemTemp = 0;
             this.viewItem(this.items[itemTemp]);
             } // if
